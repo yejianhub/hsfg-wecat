@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="applicable-device"content="mobile">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/h5.css">
+
+    <script>
+        "use strict";
+        (function (_window) {
+            // 计算dpr
+            var navigatorUserAgent = navigator.userAgent;
+            var iPhone = navigatorUserAgent.indexOf("iPhone");
+            if (iPhone > -1) {
+                var dpr = Number(window.devicePixelRatio),
+                        one_dpr = 1 / dpr;
+            } else {
+                var dpr = 1,
+                        one_dpr = 1;
+            }
+            var writeText = "<meta name=\"viewport\" content=\"width=device-width,initial-scale=" + one_dpr + ",maximum-scale=" + one_dpr + ",minimum-scale=" + one_dpr + ",user-scalable=no\">\n        <meta name=\"'flexible\" content=\"initial-dpr=" + dpr + "\">";
+            document.write(writeText);
+            // 计算字体大小
+            var html = document.getElementsByTagName("html");
+            var F0 = 75;
+            html[0].setAttribute("data-dpr", dpr);
+            var getFontSize = function getFontSize() {
+                var windowWidth = window.innerWidth;
+                html[0].style.fontSize = F0 * windowWidth / 750 + "px";
+            };
+            // 初始化
+            getFontSize();
+            _window.addEventListener("resize", getFontSize, false);
+        })(window);
+    </script>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <style>
+        body,dl,h1,h3,h5,h6,hr,p,pre {margin: 0;}
+        th,td,input,textarea {padding: 0;}
+        ol,ul {margin: 0;padding: 0;list-style: none;}
+        input,button {-webkit-appearance: none;}
+        a {text-decoration: none;}
+        .clearfix:after {content: "\200B";display: block;height: 0;clear: both;}
+        /*banner,滚动广告*/
+        .banner {position: relative;width: 100%;height: 4.1rem;}
+        .bannerbox,.bannerindex {position: absolute;}
+        .bannerbox {top: 0;left: 0;right: 0;bottom: 0;z-index: 1;overflow: hidden;}
+        .bannerlist {position: relative;width: 31rem;overflow: hidden;}
+        .bannerlist a {float: left;}
+        .bannerlist img {display: block;width: 10rem;height: 4.11rem;border: none;}
+        .bannerindex {left: 0;bottom: .3rem;width: 100%;z-index: 2;font-size: 0;text-align: center;}
+        .bannerindex li {display: inline-block;margin: 0 .16rem;width: .19rem;height: .19rem;border-radius: .2rem;background-color: #e5e5e5;}
+        .bannerindex li.thisindex {background-color: #93d3eb;}
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="image/head_1_02.png" alt="">
+</div>
+
+
+
+
+<div class="banner">
+
+    <!--轮播图-->
+    <div class="banner" id="banner">
+        <div id="bannerbox" class="bannerbox">
+            <div id="bannerlist" class="bannerlist clearfix">
+                <a href="#"><b style="display: block;width: 10rem;height: 510px;"><img src="images/child_1_05.png"
+                                                                                                                    alt="" style="width: 10.1rem;height: 260px;" ></b></a>
+                <a href="#"><b style="display: block;width:10rem;height: 510px;"><img src="images/child_2.png"
+                                                                                                               alt="" style="width: 10.1rem;height: 260px;" ></b></a>
+                <a href="#"><b style="display: block;width: 10rem;height:510px;"><img src="images/child_3.png"
+                                                                                                             alt="" style="width: 10.1rem;height: 260px;" ></b></a>
+                <a href="#"><b style="display: block;width: 10rem;height: 510px;"><img src="images/child_4_02.png"
+                                                                                                               alt="" style="width:10.1rem;height: 260px;" ></b></a>
+                <a href="#"><b style="display: block;width: 10rem;height: 510px;"><img src="images/child_2.png"
+                                                                                                              alt="" style="width: 10.1rem;height: 260px;" ></b></a>
+            </div>
+        </div>
+        <ol id="bannerindex" class="bannerindex">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+
+
+</div>
+
+
+<!--活动图片部分-->
+<div class="tit"><img src="image/tit_1.png" alt=""></div>
+
+
+
+<div class="first_1">
+    <img src="image/hd_1.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_2.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_3.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_4.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_5.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_6.jpg" alt="">
+
+</div>
+
+
+<div class="first_1">
+    <img src="image/hd_7.jpg" alt="">
+
+</div>
+
+
+<div class="first_1">
+    <img src="image/hd_8.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_9.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_10.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_11.jpg" alt="">
+
+</div>
+
+<div class="first_1">
+    <img src="image/hd_12.jpg" alt="">
+
+</div>
+<div class="first_1">
+    <img src="image/hd_13.jpg" alt="">
+
+</div>
+<div class="first_1">
+    <img src="image/hd_14.jpg" alt="">
+
+</div>
+<div class="first_1">
+    <img src="image/hd_15.jpg" alt="">
+
+</div>
+<div class="first_1">
+    <img src="image/hd_16.jpg" alt="">
+
+</div>
+<div class="first_1">
+    <img src="image/hd_17.jpg" alt="">
+
+</div>
+<div class="first_1">
+    <img src="image/hd_18.jpg" alt="">
+
+</div>
+
+<script>
+    "use strict";
+    var bannerList = document.getElementById("bannerlist"),
+            img = bannerList.getElementsByTagName("a"),
+            bannerIndex = document.getElementById("bannerindex").getElementsByTagName("li"),
+            bannerBox = document.getElementById("bannerbox"); //touch事件容器
+    var index = 0,
+            // 当前索引
+            maxIndex = img.length - 1,
+            //最大索引
+            classname = "thisindex";
+    var setmain,
+            // 轮播主体定时器
+            setframe,
+            // 连续运动定时器
+            time = 4000,
+            // 连续间隔时间
+            animationIng = 0; // 判断轮播连续运动定时器是否存在
+    // 速度和单位
+    var velocit = 0.65;
+    var metric = "rem";
+    // touch事件相关函数
+    var start = {};
+    start.x = "";
+    start.right = "";
+    start.time = "";
+    var end = {};
+    end.x = "";
+    var html = document.getElementsByTagName("html");
+    // px to rem
+    var px2rem = function px2rem(px) {
+        return px / parseFloat(html[0].style.fontSize);
+    };
+    // touchstart
+    var bannerStartFun = function bannerStartFun(event) {
+        if (animationIng == 0) {
+            animationIng = 1;
+            clearTimeout(setmain);
+            var e = event.touches[0];
+            start.x = e.pageX;
+            start.right = parseFloat(bannerList.style.right);
+            start.time = +new Date();
+            document.addEventListener("touchmove", bannerMoveFun, false);
+            document.addEventListener("touchend", bannerEndFun, false);
+        }
+    };
+    // touchmove
+    var bannerMoveFun = function bannerMoveFun(event) {
+        event.preventDefault();
+        var move = function move() {
+            var e = event.touches[0];
+            end.x = e.pageX;
+            var cha = px2rem(end.x - start.x);
+            bannerList.style.right = start.right - cha + metric;
+        };
+        requestAnimationFrame(move);
+    };
+    // touchend
+    var bannerEndFun = function bannerEndFun(event) {
+        end.time = +new Date();
+        if (end.time - start.time >= 50) {
+            var cha = px2rem(end.x - start.x);
+            if (Math.abs(cha) >= 2) {
+                cha > 0 ? endFunB() : endFunA();
+            } else {
+                endFunC();
+            }
+        } else {
+            endFunC();
+        }
+        document.removeEventListener("touchmove", bannerMoveFun);
+        document.removeEventListener("touchend", bannerEndFun);
+    };
+    // touchend判断并执行相应的函数
+    // 加加函数
+    var endFunA = function endFunA() {
+        bannerIndex[index].classList.remove(classname);
+        index == maxIndex ? index = 0 : index++;
+        bannerIndex[index].classList.add(classname);
+        animation(20, function () {
+            enlargeCallBack();
+            animationIng = 0;
+            setmain = setTimeout(main, time);
+        });
+    };
+    // 减减函数
+    var endFunB = function endFunB() {
+        bannerIndex[index].classList.remove(classname);
+        index == 0 ? index = maxIndex : index--;
+        bannerIndex[index].classList.add(classname);
+        animation(0, function () {
+            reduceCallBack();
+            animationIng = 0;
+            setmain = setTimeout(main, time);
+        });
+    };
+    // index不变的函数
+    var endFunC = function endFunC() {
+        animation(10, function () {
+            animationIng = 0;
+            setmain = setTimeout(main, time);
+        });
+    };
+    // index++回调函数
+    var enlargeCallBack = function enlargeCallBack() {
+        bannerList.appendChild(img[0]);
+        bannerList.style.right = "10" + metric;
+    };
+    // index--回调函数
+    var reduceCallBack = function reduceCallBack() {
+        bannerList.insertBefore(img[maxIndex], img[0]);
+        bannerList.style.right = "10" + metric;
+    };
+    // 动画函数
+    var animation = function animation(target, callback) {
+        var v = "";
+        var start = parseFloat(bannerList.style.right);
+        start < target ? v = +velocit : v = -velocit;
+        var frame = function frame() {
+            var right = parseFloat(bannerList.style.right);
+            if (Math.abs(target - right) > velocit) {
+                bannerList.style.right = v + right + metric;
+                setframe = requestAnimationFrame(frame);
+            } else {
+                bannerList.style.right = target + metric;
+                callback ? callback() : "";
+            }
+        };
+        setframe = requestAnimationFrame(frame);
+    };
+    // 轮播主函数
+    var main = function main() {
+        animationIng = 1;
+        bannerIndex[index].classList.remove(classname);
+        index == maxIndex ? index = 0 : index++;
+        bannerIndex[index].classList.add(classname);
+        animation(20, function () {
+            enlargeCallBack();
+            animationIng = 0;
+            setmain = setTimeout(main, time);
+        });
+    };
+    // 初始化
+    var init = function init() {
+        bannerList.insertBefore(img[maxIndex], img[0]);
+        bannerList.style.right = "10" + metric;
+        bannerIndex[0].classList.add(classname);
+        bannerBox.addEventListener("touchstart", bannerStartFun, false);
+        setmain = setTimeout(main, time);
+    };
+    init();
+</script>
+</body>
+</html>
